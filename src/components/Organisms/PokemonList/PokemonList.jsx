@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { PokemonItem } from "../../Molecules/PokemonItem/PokemonItem";
+import { CharacterItem } from "../../Molecules/CharacterItem/CharacterItem";
 import "./PokemonList.scss";
 
 const PokemonList = () => {
@@ -20,7 +20,11 @@ const PokemonList = () => {
             <h2>PokemonList</h2>
             <div className="pokemonsContainer">
                 {pokemons.map((pokemon, index) => (
-                    <PokemonItem name={pokemon.name} key={index} />
+                    <CharacterItem
+                        name={pokemon.name}
+                        img={`https://img.pokemondb.net/sprites/home/normal/${pokemon.name}.png`}
+                        key={index}
+                    />
                 ))}
             </div>
         </div>

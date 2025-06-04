@@ -2,6 +2,7 @@ $pokemon-card-bg-color: #f1f1f1;
 
 .pokemonItemContainer {
     background-color: $pokemon-card-bg-color;
+    color: #000;
     flex-direction: row;
     display: flex;
     align-items: center;
