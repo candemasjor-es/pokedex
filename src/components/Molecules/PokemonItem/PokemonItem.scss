@@ -1,0 +1,21 @@
+$pokemon-card-bg-color: #f1f1f1;
+
+.pokemonItemContainer {
+    background-color: $pokemon-card-bg-color;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 16px 8px;
+    width: 180px;
+}
+
+.pokemonItemContainer img {
+    width: 60px;
+}
+
+.pokemonItemContainer p {
+    font-size: 18px;
+    font-weight: bold;
+}
