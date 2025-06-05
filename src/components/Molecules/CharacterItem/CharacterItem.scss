@@ -1,8 +1,5 @@
-$pokemon-card-bg-color: #f1f1f1;
-
-.pokemonItemContainer {
-    background-color: $pokemon-card-bg-color;
-    color: #000;
+@mixin characterContainerMixin ($theme: #f1f1f1) {
+    background-color: $theme;
     flex-direction: row;
     display: flex;
     align-items: center;
@@ -12,11 +9,25 @@ $pokemon-card-bg-color: #f1f1f1;
     width: 180px;
 }
 
-.pokemonItemContainer img {
+.characterItemContainer {
+    @include characterContainerMixin($theme: #f1f1f1);
+}
+
+.characterItemContainer-dark {
+    @include characterContainerMixin($theme: #3e3d3d);
+}
+
+img {
     width: 60px;
 }
 
-.pokemonItemContainer p {
+.itemText {
     font-size: 18px;
     font-weight: bold;
+    color: black
 }
+
+.itemText-dark {
+    font-size: 18px;
+    font-weight: bold;
+    color: white }
